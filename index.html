@@ -10,65 +10,62 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="main-menu">
-                <h1><img src="/images/logo.png" alt="logo"></h1>
-                <nav>
-                    <ul class="menu-list">
-                        <li class="news"><a href="">NEWS</a></li>
-                        <li class="about"><a href="">ABOUT</a></li>
-                        <li class="business"><a href="">BUSINESS</a></li>
-                        <li class="company"><a href="">COMPANY</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="request">
-                <input type="submit" value="資料請求">
-            </div>
+        <div class="main-menu">
+            <h1><img src="/images/logo.png" alt="logo"></h1>
+            <nav>
+                <ul class="menu-list">
+                    <li class="news"><a href="">NEWS</a></li>
+                    <li class="about"><a href="">ABOUT</a></li>
+                    <li class="business"><a href="">BUSINESS</a></li>
+                    <li class="company"><a href="">COMPANY</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="request">
+            <a href="">資料請求</a>
+            <!-- <input type="submit" value="資料請求"> -->
         </div>
     </header>
 
     <div class="mainvisual-wrapper">
-        <div class="container">
-            <img src="/images/mainvisual.png" alt="mainvisual">
-        </div>
+        <img src="/images/mainvisual.png" alt="mainvisual">
     </div>
 
     <div class="news-wrapper">
         <div class="container">
-            <div class="title-wrapper">
-                <h2>NEWS</h2>
-                <h3><span class="underline">ニュー</span>ス</h3>
+            <div class="title">
+                <h2>NEWS<span>ニュース</span></h2>
             </div>
-            <div class="news-contents">
-                <ul class="topics-1">
-                    <dt>2021.01.01</dt>
-                    <dt class="topic-mark">NEWS</dt>
-                    <dd>タイトルタイトルタイトルタイトル</dd>
-                </ul>
-                <ul class="topics-2">
-                    <dt>2021.01.01</dt>
-                    <dt class="topic-mark">PRESS</dt>
-                    <dd>タイトルタイトルタイトルタイトル</dd>
-                </ul>
-                <ul class="topics-3">
-                    <dt>2021.01.01</dt>
-                    <dt class="topic-mark">NEWS</dt>
-                    <dd>タイトルタイトルタイトルタイトル</dd>
-                </ul>
-            </div>
+            <ul class="news-contents">
+                <li>
+                    <div class="news-info">
+                        <time datetime="2021-01-01">2021.01.01</time><span>NEWS</span>
+                    </div>
+                    <p>タイトルタイトルタイトルタイトル</p>
+                </li>
+                <li>
+                    <div class="news-info">
+                        <time datetime="2021-01-01">2021.01.01</time><span>PRESS</span>
+                    </div>
+                    <p>タイトルタイトルタイトルタイトル</p>
+                </li>
+                <li>
+                    <div class="news-info">
+                        <time datetime="2021-01-01">2021.01.01</time><span>NEWS</span>
+                    </div>
+                    <p>タイトルタイトルタイトルタイトル</p>
+                </li>
+            </ul>
         </div>
     </div>
 
     <div class="about-wrapper">
-        <div class="container">
             <div class="about-images">
                 <img src="/images/about.png" alt="about">
             </div>
             <div class="about-contents">
-                <div class="title-wrapper">
-                    <h2>ABOUT</h2>
-                    <h3><span class="underline">私たち</span>について</h3>
+                <div class="title">
+                    <h2>ABOUT<span>私たちについて</span></h2>
                 </div>
                 <div class="about-text">
                     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -76,7 +73,6 @@
                     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
             </div>
-        </div>
     </div>
 </body>
 </html>

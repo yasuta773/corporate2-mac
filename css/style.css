@@ -5,6 +5,10 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    font-size: 1.4rem;
+}
+
 .container{
     margin: 0 auto;
     max-width: 1000px;
@@ -12,35 +16,40 @@ html{
     margin-bottom: 120px;
 }
 
-.title-wrapper h2{
+.title h2{
     font-size: 3.6rem;
     font-weight: normal;
     letter-spacing: 0.3em;
     color: #000000;
+    margin-bottom: 86px;
+    position: relative;
 }
 
-.title-wrapper h3{
+.title h2::after{
+   content: "";
+   width: 40px;
+   height: 1px;
+   background-color: #000;
+   position:absolute;
+   top: 100px;
+}
+
+.title span{
+    display: block;
     font-size: 1.4rem;
     font-weight: normal;
     color: #000000;
-}
-
-.title-wrapper .underline{
-    border-bottom: 1px solid #000000;
-    padding-bottom: 36px;
+    letter-spacing: normal;
 }
 
 a{
-    font-size: 1.4rem;
     text-decoration: none;
     color: #000000;
 }
 /*共通ここまで*/
 
 /*headerここから*/
-header .container{
-    max-width: 1400px;
-    width: 100%;
+header{
     display: flex;
     justify-content: space-between;
 }
@@ -66,68 +75,81 @@ header .container{
 .request{
     padding: 34px 76px;
     background-color: #000000;
-    color: #FFFFFF;
     font-size: 1.2rem;
+}
+.request a{
+    color: #FFF;
 }
 /*headerここまで*/
 
 /*mainvisual-wrapperここから*/
-.mainvisual-wrapper .container{
-    max-width: 1400px;
-    width: 100%;
+.mainvisual-wrapper{
+    margin-bottom: 120px;
 }
+
 .mainvisual-wrapper img{
     width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
 /*mainvisual-wrapperここまで*/
 
 /*news-wrapperここから*/
 .news-contents{
-    margin-top: 86px;
     display: flex;
-    flex-direction: row;
+    list-style: none;
 }
 
-.news-contents ul{
+.news-contents li{
     width: 33%;
+    border-right: 1px solid #000;
+    padding: 9px 0 8px 20px;
 }
 
-.news-contents .topics-2{
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    padding-left: 20px;
+.news-contents li:first-of-type{
+    padding-left: 0px;
 }
 
-.news-contents .topics-3{
-    padding-left: 20px;
+.news-contents li:last-of-type{
+    border-right: none;
 }
 
-.news-contents dt{
-    float: left;
-    margin-right: 10px;
-}
-
-.topic-mark{
-    padding: 0 5px;
+.news-info span{
+    margin-left: 19px;
+    padding: 3px 5px;
     background-color: #000000;
+    font-size: 1.2rem;
     color: #FFFFFF;
 }
 
-.news-contents dd{
-    clear: left;
+.news-contents p{
     padding-top: 16px;
     font-size: 1.6rem;
 }
 /*news-wrapperここまで*/
 
 /*about-wrapperここから*/
-.about-wrapper .container{
-    max-width: 1400px;
-    width: 100%;
+.about-wrapper{
+    width: initial;
     display: flex;
-    align-items: flex-end;
 }
+
+.about-images{
+    width: calc(760 / 1400 * 100%);
+}
+.about-images img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
 .about-contents{
+    width: calc(640 / 1400 * 100%);
+    padding: 180px 97px 0 70px;
+}
+
+.about-text p{
+    line-height: calc(30.8 / 14);
 }
 /*about-wrapperここまで*/
 
