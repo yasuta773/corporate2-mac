@@ -12,9 +12,10 @@ body{
 
 .container{
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1032px;
     width: 100%;
-    margin-bottom: 106px;
+    margin-bottom: 124px;
+    padding: 0 16px;
 }
 
 .title h2{
@@ -22,7 +23,7 @@ body{
     font-weight: normal;
     letter-spacing: 0.3em;
     color: #000000;
-    margin-bottom: 71px;
+    margin-bottom: 72px;
     position: relative;
 }
 
@@ -51,10 +52,25 @@ a{
 img{
     width: 100%;
 }
+
+@media screen and (max-width: 750px){
+    .container{
+        margin-bottom: 51px;
+    }
+
+    .title h2{
+        margin-bottom: 48px;
+    }
+
+    .title h2::after{
+        top: 95px;
+    }
+}
 /*共通ここまで*/
 
 /*headerここから*/
 header{
+    height: 76px;
     display: flex;
     justify-content: space-between;
 }
@@ -66,7 +82,7 @@ header{
 
 .main-menu h1{
     height: 35px;
-    margin: 22px 60px 26.3px 91px;
+    margin: 19px 60px 23px 91px;
 }
 
 .menu-list{
@@ -75,27 +91,62 @@ header{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin: 30px 0;
+    margin: 26px 0;
 }
 
 .request{
-    padding: 31px 76px;
+    padding: 27px 76px;
     background-color: #000000;
     font-size: 1.2rem;
 }
 .request a{
     color: #FFF;
 }
+
+@media screen and (max-width: 750px){
+    header{
+        display: block;
+        margin: 8px 16px 15px 16px;
+        height: initial;
+    }
+
+    .main-menu{
+        display: block;
+    }
+
+    .main-menu h1{
+        margin: initial;
+    }
+
+    .main-menu img{
+        width: 80px;
+        height: 20px;
+    }
+
+    .menu-list{
+        margin: 0;
+    }
+
+    .request{
+        display: none;
+    }
+}
 /*headerここまで*/
 
 /*mainvisual-wrapperここから*/
 .mainvisual-wrapper{
-    margin-bottom: 106px;
+    margin-bottom: 109px;
 }
 
 .mainvisual-wrapper img{
     height: 600px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 750px){
+    .mainvisual-wrapper{
+        margin-bottom: 70px;
+    }
 }
 /*mainvisual-wrapperここまで*/
 
@@ -135,13 +186,32 @@ time{
     padding-top: 12px;
     font-size: 1.6rem;
 }
+
+@media screen and (max-width: 750px) {
+    .news-contents{
+        display: block;
+    }
+
+    .news-contents li{
+        width: 100%;
+        padding-left: 0;
+        border-right: none;
+        padding-top: 0;
+        padding-bottom: 35px;
+    }
+
+    .news-contents li:first-of-type{
+        padding-top: 14px;
+    }
+
+}
 /*news-wrapperここまで*/
 
 /*about-wrapperここから*/
 .about-wrapper{
     width: initial;
     display: flex;
-    margin-bottom: 120px;
+    margin-bottom: 109px;
 }
 
 .about-images{
@@ -154,23 +224,48 @@ time{
 
 .about-contents{
     width: calc(640 / 1400 * 100%);
-    padding: 180px 97px 0 70px;
+    padding: 173px 97px 0 70px;
 }
 
 .about-text p{
     line-height: calc(30.8 / 14);
 }
+
+@media screen and (max-width: 750px) {
+    .about-wrapper{
+        display: block;
+        margin-bottom: 63px;
+    }
+
+    .about-images{
+        width: initial;
+    }
+
+    .about-images img{
+        height: 300px;
+    }
+
+    .about-contents{
+        width: initial;
+        padding: 20px 16px 0 16px;
+    }
+}
 /*about-wrapperここまで*/
 
 /*business-wrapperここから*/
+.business-wrapper .container{
+    margin-bottom: 114px;
+}
+
 .business-images{
     display: flex;
     margin: 0 100px 0 100px;
 }
 
 .business-images h3{
+    font-size: 1.35rem;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     padding-left: 18px;
     position: relative;
 }
@@ -191,13 +286,46 @@ time{
 }
 
 .images-left{
-    padding-top: 86px;
+    padding-top: 107px;
     margin-right: 64px;
+}
+
+.images-right{
+    padding-top: 6px;
 }
 
 .images-container1,
 .images-container3{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 750px) {
+    .business-wrapper .container{
+        margin-bottom: 88px;
+    }
+
+    .business-images{
+        display: block;
+        margin: initial;
+    }
+
+    .business-images > .images-left,
+    .business-images > .images-right{
+    width: 100%;
+    }
+
+    .images-left{
+        padding-top: 4px;
+    }
+
+    .images-container1,
+    .images-container3{
+        margin-bottom: 36px;
+    }
+
+    .images-right{
+        margin-top: 28px;
+    }
 }
 /*business-wrapperここまで*/
 
@@ -209,27 +337,65 @@ time{
 .company-contents{
     max-width: 567px;
     height: 565px;
-    padding: 100px 0 100px 62px;
+    padding: 100px 124px 100px 62px;
     background-color: #FFF;
 }
 
+.company-info dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .company-info dt{
-    float: left;
+    /* float: left; */
+    width: 85px;
+    padding-bottom: 6.5px;
 }
 
 .company-info dd{
-    margin-left: 85px;
+    /* margin-left: 85px; */
+    width: calc(100% - 85px);
+    padding-left: 1em;
 }
 
 .company-images{
     position: absolute;
     top: 81px;
-    left: 453px;
+    left: 469px;
 }
 
 .company-images img{
     height: 400px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+    .company-wrapper .container{
+        margin-bottom: -5px;
+    }
+
+    .company-contents{
+        padding: 33px 0 0 20px;
+    }
+
+    .company-info dl{
+        display: block;
+        margin-top: 3px;
+    }
+
+    .company-info dt{
+        padding-bottom: 0;
+    }
+
+    .company-info dd{
+        width: initial;
+        padding-bottom: 13px;
+    }
+
+    .company-images{
+        position: initial;
+        margin-top: 20px;
+    }
 }
 /*company-wrapperここまで*/
 
@@ -239,13 +405,41 @@ footer{
 }
 
 footer .container{
-    padding: 40px 19px 20px 0;
+    padding: 38px 29px 20px 16px;
 }
 
 .footer-contents{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+}
+
+.address{
+    font-size: 1.3rem;
+    line-height: calc(21 / 13);
+}
+
+.copyright{
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 750px){
+    footer .container{
+        padding-top: 37px;
+    }
+
+    .footer-contents{
+        display: block;
+    }
+
+    .footer-contents h1{
+        height: 37px;
+    }
+
+    .footer-contents img{
+        width: 80px;
+        height: 20px;
+    }
 }
 /*footerここまで*/
