@@ -78,6 +78,11 @@ header{
 .main-menu{
     display: flex;
     justify-content: flex-start;
+    position: relative;
+}
+
+.hamburger-btn{
+    display: none;
 }
 
 .main-menu h1{
@@ -114,6 +119,16 @@ header{
         display: block;
     }
 
+    .hamburger-btn{
+        width: 30px;
+        height: 30px;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+
     .main-menu h1{
         margin: initial;
     }
@@ -125,6 +140,7 @@ header{
 
     .menu-list{
         margin: 0;
+        display: none;
     }
 
     .request{
@@ -336,7 +352,6 @@ time{
 }
 .company-contents{
     max-width: 567px;
-    height: 565px;
     padding: 100px 124px 100px 62px;
     background-color: #FFF;
 }
@@ -376,6 +391,8 @@ time{
 
     .company-contents{
         padding: 33px 0 0 20px;
+        max-width: initial;
+
     }
 
     .company-info dl{
@@ -406,6 +423,7 @@ footer{
 
 footer .container{
     padding: 38px 29px 20px 16px;
+    margin-bottom: initial;
 }
 
 .footer-contents{
