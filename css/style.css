@@ -382,17 +382,17 @@ time{
 .company-images img{
     height: 400px;
     object-fit: cover;
+    vertical-align: bottom;
 }
 
 @media screen and (max-width: 750px) {
     .company-wrapper .container{
-        margin-bottom: -5px;
+        margin-bottom: initial;
     }
 
     .company-contents{
         padding: 33px 0 0 20px;
         max-width: initial;
-
     }
 
     .company-info dl{
