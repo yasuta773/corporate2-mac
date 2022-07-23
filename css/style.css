@@ -143,6 +143,10 @@ header{
         display: none;
     }
 
+    .menu-list.open{
+        display: block;
+    }
+
     .request{
         display: none;
     }

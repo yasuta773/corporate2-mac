@@ -15,4 +15,14 @@ $(function(){
       $('body,html').animate({scrollTop:position}, speed, type);
       return false;
     });
+
+    $('.hamburger-btn').click(function(){
+      if($(this).hasClass('open')){
+        $('.menu-list').removeClass('open');
+        $('.hamburger-btn').removeClass('open');
+      }else{
+        $('.menu-list').addClass('open');
+        $('.hamburger-btn').addClass('open');
+      }
+    });
   });
